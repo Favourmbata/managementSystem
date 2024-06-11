@@ -40,5 +40,8 @@ jobs:
       - name: Build Docker image
         run: docker build -t favygirl/managementsystem:latest .
 
+      - name: Tag Docker image
+        run: docker tag favygirl/managementsystem:latest docker.io/favygirl/managementsystem:latest
+
       - name: Push Docker image to Docker Hub
-        run: docker push favygirl/managementsystem:latest
+        run: docker push docker.io/favygirl/managementsystem:latest
