@@ -38,10 +38,10 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
 
       - name: Build Docker image
-        run: docker build -t favygirl/managementsystem:latest .
+        run: docker build -t favourmbata520/managementsystem:latest .
 
       - name: Tag Docker image
-        run: docker tag favygirl/managementsystem:latest docker.io/favygirl/managementsystem:latest
+        run: docker tag favourmbata520/managementsystem:latest docker.io/favourmbata520/managementsystem:latest
 
       - name: Push Docker image to Docker Hub
-        run: docker push docker.io/favygirl/managementsystem:latest
+        run: docker push docker.io/favourmbata520/managementsystem:latest
