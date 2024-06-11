@@ -6,5 +6,5 @@ FROM openjdk:22
 COPY --from=build ./target/*.jar managementSystem.jar
 
 ENTRYPOINT ["java","-jar","managementSystem.jar"]
-EXPOSE PORT = 8082
+EXPOSE 8082
 
