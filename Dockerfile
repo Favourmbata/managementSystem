@@ -7,5 +7,5 @@ FROM openjdk:22
 COPY --from=build ./target/*.jar managementSystem.jar
 
 ENTRYPOINT ["java","-jar","managementSystem.jar"]
-EXPOSE  8080
 
+EXPOSE  8080
