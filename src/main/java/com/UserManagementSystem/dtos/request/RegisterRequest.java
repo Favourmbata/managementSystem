@@ -16,4 +16,5 @@ public class RegisterRequest {
     private String email;
     @NotBlank(message = "password is required")
     private String password;
+    private  String age;
 }
